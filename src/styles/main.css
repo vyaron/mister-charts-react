@@ -359,6 +359,7 @@ header.main-header nav {
 .chart-types-container .chart-type img {
     width: 60px;
     height: 60px;
+    object-fit: contain;
 }
 
 .chart-types-container .chart-type h5 {
