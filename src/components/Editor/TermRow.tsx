@@ -30,7 +30,7 @@ export function TermRow({ term, onUpdate, onRemove, canRemove }: Props) {
               onUpdate('color', color)
               setShowColorPicker(false)
             }}
-            onClose={() => setShowColorPicker(false)}
+            onChange={(color) => onUpdate('color', color)}
           />
         )}
       </div>

@@ -4,10 +4,10 @@ import { getChartColors } from '../../services/util.service'
 interface Props {
   currentColor: string
   onSelect: (color: string) => void
-  onClose: () => void
+  onChange: (color: string) => void
 }
 
-export function ColorPicker({ currentColor, onSelect }: Props) {
+export function ColorPicker({ currentColor, onSelect, onChange }: Props) {
   const colors = getChartColors()
   const colorInputRef = useRef<HTMLInputElement>(null)
 
@@ -35,7 +35,7 @@ export function ColorPicker({ currentColor, onSelect }: Props) {
         type="color"
         className="hidden-color-input"
         value={currentColor}
-        onChange={(e) => onSelect(e.target.value)}
+        onInput={(e) => onChange((e.target as HTMLInputElement).value)}
       />
     </div>
   )
