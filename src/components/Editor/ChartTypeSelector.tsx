@@ -17,7 +17,7 @@ export function ChartTypeSelector({ currentType, onSelect }: Props) {
           className={`chart-type ${currentType === chart.type ? 'active' : ''}`}
           onClick={() => onSelect(chart.type)}
         >
-          <img src={`/img/chart/${chart.type}.svg`} alt={`${chart.name} icon`} />
+          <img src={`img/chart/${chart.type}.svg`} alt={`${chart.name} icon`} />
           <h5>{chart.name}</h5>
         </div>
       ))}
