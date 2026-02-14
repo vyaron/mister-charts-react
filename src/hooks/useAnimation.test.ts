@@ -49,7 +49,7 @@ describe('useAnimation', () => {
     const { result } = renderHook(() => useAnimation())
 
     let frameId = 0
-    vi.spyOn(window, 'requestAnimationFrame').mockImplementation((cb) => {
+    vi.spyOn(window, 'requestAnimationFrame').mockImplementation((_cb) => {
       return ++frameId
     })
 
