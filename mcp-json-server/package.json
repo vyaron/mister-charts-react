@@ -1,0 +1,20 @@
+{
+  "name": "mcp-json-server",
+  "version": "1.0.0",
+  "description": "Simple MCP server that exposes a JSON file as a data source",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "zod": "^4.3.6"
+  }
+}
